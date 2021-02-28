@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet"  href="{%  static  'css/style.css'  %}">
+    <meta charset="UTF-8">
+    <title>book {{book.id}}</title>
+</head>
+<body>
+<h1 id="name">Name: {{book.name}}</h1><br>
+    Description: {{book.Description}}<br>
+    Book image: <img src="{% static book.image %}">
+</body>
+</html>
